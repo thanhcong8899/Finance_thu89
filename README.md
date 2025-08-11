@@ -1,16 +1,13 @@
 
-# finance-dashboard-thu89
+# Finance Dashboard Thu89 (Fixed)
 
-Demo Streamlit app (expanded):
-- Crypto: CoinGecko (BTC, ETH)
-- VN30: CafeF scraping (fallback to sample)
-- Light UI theme
+## Cách deploy lên Streamlit Cloud
 
-How to deploy:
-1. Create GitHub repo named `finance-dashboard-thu89`.
-2. Upload all files from the zip to the repo.
-3. On Streamlit Cloud (share.streamlit.io) sign in with GitHub -> New app -> choose your repo and app.py -> Deploy.
+1. Tạo repo mới trên GitHub, ví dụ: `finance-dashboard-thu89`
+2. Upload toàn bộ file từ thư mục này (bao gồm `app.py` và `sample_vn30.csv`)
+3. Vào [Streamlit Cloud](https://share.streamlit.io/), chọn "New app", link repo GitHub
+4. Chạy app
 
-Run locally:
-pip install -r requirements.txt
-streamlit run app.py
+App sẽ:
+- Hiển thị dữ liệu VN30 (sample) từ CSV
+- Lấy dữ liệu Bitcoin live từ CoinGecko
